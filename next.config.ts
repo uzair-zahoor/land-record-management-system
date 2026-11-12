@@ -1,9 +1,8 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  reactStrictMode: true,
+  transpilePackages: ['@mui/material', '@mui/system', '@mui/icons-material'],
 };
 
 export default nextConfig;
